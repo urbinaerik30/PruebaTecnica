@@ -1,0 +1,131 @@
+﻿@page "/pedidor"
+@rendermode InteractiveServer
+@using BscAppTest.Models
+@using Microsoft.AspNetCore.Components.Forms
+@inject DataAccessService DataAccessService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<PageTitle>Pedidos</PageTitle>
+
+<h1>Pedidos</h1>
+
+<EditForm Model="@pedido" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <p></p>
+    <div>
+        <label>Nombre del Producto:</label>
+        <InputSelect @bind-Value="pedido.Nombre">
+            <option value="">Seleccionar Producto</option>
+            @foreach (var producto in productos)
+            {
+                <option value="@producto.Nombre">@producto.Nombre</option>
+            }
+        </InputSelect>
+        <ValidationMessage For="@(() => pedido.Nombre)" />
+    </div>
+    <p></p>
+    <div>
+        <label>Cantidad:</label>
+        <InputNumber @bind-Value="pedido.Cantidad" placeholder="Cantidad" />
+        <ValidationMessage For="@(() => pedido.Cantidad)" />
+    </div>
+    <p></p>
+    <div>
+        <label>Cliente:</label>
+        <InputSelect @bind-Value="pedido.IdCliente">
+            <option value=0>CAMISETAS BUENAS</option>
+            <option value=1>DEPORTES URBINA</option>
+            <option value=2>COMPUTADORAS SA DE CV</option>
+        </InputSelect>
+        <ValidationMessage For="@(() => pedido.IdCliente)" />
+    </div>
+    <p></p>
+    <button class="btn btn-primary" type="submit">Registrar Pedido</button>
+</EditForm>
+<p></p>
+<p></p>
+
+<h1>Lista de Pedidos</h1>
+@if (pedidos == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID Pedido</th>
+                <th>Nombre del Producto</th>
+                <th>Cantidad</th>
+                <th>Cliente</th>
+                <th>Fecha</th>
+                <th>Estatus</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var pedido in pedidos)
+            {
+                <tr>
+                    <td>@pedido.IdPedidoP</td>
+                    <td>@pedido.Nombre</td>
+                    <td>@pedido.Cantidad</td>
+                    <td>@pedido.Cliente</td>
+                    <td>@pedido.Fecha</td>
+                    <td>@pedido.Estatus</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Pedido pedido = new Pedido();
+    private List<Producto> productos = new List<Producto>();
+    private List<Pedido> pedidos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var productosList = await DataAccessService.OptionProducts(3, 0, "", "", 0, 0);
+        if (productosList is List<Producto> listaProductos)
+        {
+            productos = listaProductos;
+        }
+        else
+        {
+            Console.WriteLine("Error: No se devolvió una lista de productos.");
+        }
+
+        var pedidosList = await DataAccessService.OptionPedidos(3, 0, "", "", 0, 0, 0);
+        if (pedidosList is List<Pedido> listaPedidos)
+        {
+            pedidos = listaPedidos;
+        }
+        else
+        {
+            Console.WriteLine("Error: No se devolvió una lista de pedidos.");
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        pedido.IdCliente = 0;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var result = await DataAccessService.OptionPedidos(0, 0, "", pedido.Nombre, pedido.Cantidad, 0, pedido.IdCliente);
+
+        if (result is bool success && success)
+        {
+            
+            NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+        }
+        else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "No hay existencias suficientes.");
+        }
+    }
+}

@@ -1,0 +1,57 @@
+﻿@page "/"
+
+<PageTitle>Inicio de aplicación</PageTitle>
+
+<h1>Bienvenido, antes de usar la aplicación lea las instrucciones</h1>
+
+El proyecto cuenta con las 3 capas:
+<p></p>
+*UI
+<p></p>
+- En la raíz del proyecto, dentro de la carpeta Components existen archivos con la externsión .razor que tienen contenido HTML
+<p></p>
+<p></p>
+*Business Logic
+<p></p>
+- En la raíz del proyecto, dentro de la carpeta Models existen las clases en las que se realizan las validaciones pertinentes.
+<p></p>
+<p></p>
+*Data Access
+<p></p>
+- En la raíz del proyecto, dentro de la carpeta Services, se encuentra la clase DataAccessService, que gestiona toda la parte de datos, ejecutando los procesos de SQL.
+<p></p>
+<p></p>
+En caso de ser necesario cambiar la cadena de conexión, visitar el archivo appsettings.json
+<p></p>
+Se debe cambiar en esta parte "ConnectionStrings": {"DefaultConnection": "Server=DESKTOP-PJDNU91\\SQLEXPRESS01;Database=BscDB;TrustServerCertificate=True;Trusted_Connection=True;"},
+<p></p>
+<p></p>
+Antes de realizar cualquier operación, se deben ejecutar los scripst de las consultas de inserción de prueba que se anexan en el documento "ConsultasSql"
+<p></p>
+Para verificar toda la funcionalidad de la aplicación, antes que cualquier otra cosa, vaya a la pestaña superior izquierda "Login" e intente acceder.
+<p></p>
+Verificada la funcionalidad del Login, usted puede ver las otras funcionalidades, explico:
+<p></p>
+*Usuarios
+<p></p>
+-Registrar usuarios.
+<p></p>
+-Ver el listado de usuarios, con todos sus atributos.
+<p></p>
+<p></p>
+*Productos
+<p></p>
+-Registrar productos
+<p></p>
+-Ver el listado de productos, con todos sus atributos.
+<p></p>
+<p></p>
+*Pedidos
+<p></p>
+-Registrar pedidos
+<p></p>
+-Ver el listado de pedidos, con todos sus atributos.
+<p></p>
+<p></p>
+
+

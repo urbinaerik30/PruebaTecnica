@@ -1,0 +1,122 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Components.Authorization
+@using BscAppTest.Models
+@using Microsoft.AspNetCore.Components.Forms
+@inject DataAccessService DataAccessService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<PageTitle>Registrar</PageTitle>
+
+<h1>Registrar</h1>
+
+<EditForm Model="@usuario" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>
+        <label>Nombre Usuario:</label>
+        <InputText @bind-Value="usuario.Name" placeholder="Nombre Usuario" />
+        <ValidationMessage For="@(() => usuario.Name)" />
+    </div>
+    <p></p>
+    <div>
+        <label>Email:</label>
+        <InputText @bind-Value="usuario.Email" placeholder="Email" />
+        <ValidationMessage For="@(() => usuario.Email)" />
+    </div>
+    <p></p>
+    <div>
+        <label>Password:</label>
+        <InputText @bind-Value="usuario.PasswordU" type="password" placeholder="Password" />
+        <ValidationMessage For="@(() => usuario.PasswordU)" />
+    </div>
+    <p></p>
+    <div>
+        <label>Rol:</label>
+        <InputSelect @bind-Value="usuario.Rol">
+            <option value="Admin">Administrador</option>
+            <option value="Personal">Personal</option>
+            <option value="Vendedor">Vendedor</option>
+        </InputSelect>
+    </div>
+    <p></p>
+    <button class="btn btn-primary" type="submit">Registrar</button>
+</EditForm>
+<p></p>
+<p></p>
+
+<h1>Lista de Usuarios</h1>
+@if (usuarios == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Contraseña</th>
+                <th>Rol</th>
+                <th>Estatus</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in usuarios)
+            {
+                <tr>
+                    <td>@usuario.UserId</td>
+                    <td>@usuario.Name</td>
+                    <td>@usuario.Email</td>
+                    <td>@usuario.PasswordU</td>
+                    <td>@usuario.Rol</td>
+                    <td>@(usuario.Active ? "Activo" : "Inactivo")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Usuario usuario = new Usuario();
+    private List<Usuario> usuarios;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var resultList = await DataAccessService.OptionAdminUser(0, "", "", "", "", 3, 0);
+        if (resultList is List<Usuario> listaUsuarios)
+        {
+            usuarios = listaUsuarios;
+            foreach (var usuario in usuarios)
+            {
+                Console.WriteLine($"UserId: {usuario.UserId}, Name: {usuario.Name}, Email: {usuario.Email}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Error: No se devolvió una lista de usuarios.");
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        usuario.Rol = "Admin";
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var result = await DataAccessService.OptionAdminUser(usuario.UserId, usuario.Name, usuario.Email, usuario.PasswordU, usuario.Rol, 0, 0);
+
+        if (result is bool success && success)
+        {
+            NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+        }
+        else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "No se pudo registrar el usuario");
+        }
+    }
+}

@@ -1,0 +1,93 @@
+﻿@page "/weather"
+@rendermode InteractiveServer
+@using BscAppTest.Models
+@using Microsoft.AspNetCore.Components.Forms
+@inject DataAccessService DataAccessService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<PageTitle>Productos</PageTitle>
+
+<h1>Productos</h1>
+
+<EditForm Model="@producto" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>
+        <label>Nombre del Producto:</label>
+        <InputText @bind-Value="producto.Nombre" placeholder="Nombre del Producto" />
+        <ValidationMessage For="@(() => producto.Nombre)" />
+    </div>
+    <p></p>
+    <div>
+        <label>Cantidad:</label>
+        <InputNumber @bind-Value="producto.Existencia" placeholder="Cantidad" />
+        <ValidationMessage For="@(() => producto.Existencia)" />
+    </div>
+    <p></p>
+    <button class="btn btn-primary" type="submit">Registrar</button>
+</EditForm>
+<p></p>
+<p></p>
+
+<h1>Lista de Productos</h1>
+@if (productos == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Clave</th>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in productos)
+            {
+                <tr>
+                    <td>@producto.ProductId</td>
+                    <td>@producto.Clave</td>
+                    <td>@producto.Nombre</td>
+                    <td>@producto.Existencia</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Producto producto = new Producto();
+    private List<Producto> productos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var resultList = await DataAccessService.OptionProducts(3, 0, "", "", 0, 0);
+        if (resultList is List<Producto> listaProductos)
+        {
+            productos = listaProductos;
+        }
+        else
+        {
+            Console.WriteLine("Error: No se devolvió una lista de productos.");
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var result = await DataAccessService.OptionProducts(0, 0, "", producto.Nombre, producto.Existencia, 0);
+
+        if (result is bool success && success)
+        {
+            NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+        }
+        else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "No hay existencias suficientes.");
+        }
+    }
+}

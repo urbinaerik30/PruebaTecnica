@@ -1,0 +1,53 @@
+﻿@page "/login"
+@rendermode InteractiveServer
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.ComponentModel.DataAnnotations;
+@inject DataAccessService DataAccessService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<PageTitle>Login</PageTitle>
+
+<h1>Login</h1>
+
+<EditForm Model="@loginModel" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div>
+        <label>Email:</label>
+        <InputText @bind-Value="loginModel.Email" />
+        <ValidationMessage For="@(() => loginModel.Email)" />
+    </div>
+    <div>
+        <label>Password:</label>
+        <InputText @bind-Value="loginModel.Password" type="password" />
+        <ValidationMessage For="@(() => loginModel.Password)" />
+    </div>
+    <button class="btn btn-primary" type="submit">Login</button>
+</EditForm>
+
+@code {
+    private LoginModel loginModel = new LoginModel();
+
+    private async Task HandleValidSubmit()
+    {
+        if (await DataAccessService.ValidateUserLogin(loginModel.Email, loginModel.Password))
+        {
+            NavigationManager.NavigateTo("/");
+        }
+        else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "No se puede ingresar, revise sus datos y su conexión");
+        }
+    }
+
+    public class LoginModel
+    {
+        [Required(ErrorMessage = "El email es obligatorio.")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "La contraseña es obligatoria.")]
+        [RegularExpression(@"^[a-zA-Z]{8}$", ErrorMessage = "La contraseña debe tener exactamente 8 caracteres y contener solo letras.")]
+        public string Password { get; set; }
+    }
+}

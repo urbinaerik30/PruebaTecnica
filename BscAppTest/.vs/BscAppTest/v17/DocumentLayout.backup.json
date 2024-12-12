@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\services\\dataaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\services\\dataaccessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\components\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\components\\pages\\pedidor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\components\\pages\\pedidor.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|c:\\users\\eriku\\source\\repos\\bscapptest\\bscapptest\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E6C9A23-A7A7-45C3-A547-A62E659DE0A6}|BscAppTest\\BscAppTest.csproj|solutionrelative:bscapptest\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\appsettings.json",
+              "RelativeDocumentMoniker": "BscAppTest\\appsettings.json",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\appsettings.json",
+              "RelativeToolTip": "BscAppTest\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-12T04:19:02.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BscAppTest\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BscAppTest\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T20:09:44.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Program.cs",
+              "RelativeDocumentMoniker": "BscAppTest\\Program.cs",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Program.cs",
+              "RelativeToolTip": "BscAppTest\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIA1wBUAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T19:53:14.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "BscAppTest\\Models\\Pedido.cs",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Models\\Pedido.cs",
+              "RelativeToolTip": "BscAppTest\\Models\\Pedido.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T13:33:29.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pedidor.razor",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Pedidor.razor",
+              "RelativeDocumentMoniker": "BscAppTest\\Components\\Pages\\Pedidor.razor",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Pedidor.razor",
+              "RelativeToolTip": "BscAppTest\\Components\\Pages\\Pedidor.razor",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAhwHUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T13:23:11.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "BscAppTest\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Models\\Producto.cs",
+              "RelativeToolTip": "BscAppTest\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:31:41.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "BscAppTest\\Components\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Counter.razor",
+              "RelativeToolTip": "BscAppTest\\Components\\Pages\\Counter.razor",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAhwHIAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T16:32:18.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Login.razor",
+              "RelativeDocumentMoniker": "BscAppTest\\Components\\Pages\\Login.razor",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Login.razor",
+              "RelativeToolTip": "BscAppTest\\Components\\Pages\\Login.razor",
+              "ViewState": "AgIAABQAAAAAAAAAAAAhwCUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T16:06:35.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataAccessService.cs",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Services\\DataAccessService.cs",
+              "RelativeDocumentMoniker": "BscAppTest\\Services\\DataAccessService.cs",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Services\\DataAccessService.cs",
+              "RelativeToolTip": "BscAppTest\\Services\\DataAccessService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADgvxoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:59:58.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "BscAppTest\\Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "BscAppTest\\Components\\Pages\\Weather.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T04:37:21.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BscAppTest\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BscAppTest\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T13:20:42.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "BscAppTest\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "BscAppTest\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:34:53.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "BscAppTest\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\eriku\\source\\repos\\BscAppTest\\BscAppTest\\Models\\Usuario.cs",
+              "RelativeToolTip": "BscAppTest\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:10:56.622Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
